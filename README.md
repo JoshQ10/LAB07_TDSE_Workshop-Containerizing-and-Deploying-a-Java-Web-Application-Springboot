@@ -281,6 +281,8 @@ prueba 3 contenedores corriendo simultaneamente: <img width="2546" height="285" 
 prueba compose: <img width="559" height="158" alt="image" src="https://github.com/user-attachments/assets/27b904c2-3737-4d4b-bcc4-d7cefef4b1de" />
 correccion nuevos tags con minusculas: <img width="1611" height="120" alt="image" src="https://github.com/user-attachments/assets/baa81bcb-b4b8-44d3-b495-276286a3ae0a" />
 push lab 1.0: <img width="1757" height="161" alt="image" src="https://github.com/user-attachments/assets/f4a115f3-2bfd-433c-bf7c-9c6528193ce7" />
+push lastest (misma imagen): <img width="1402" height="182" alt="image" src="https://github.com/user-attachments/assets/8ba2e5fd-0143-49c3-bef0-92a640f01f2b" />
+prueba ambos push de docker funcionando: <img width="975" height="179" alt="image" src="https://github.com/user-attachments/assets/f0d04197-3c24-448f-ab40-ac85a60c52c6" />
 
 
 
