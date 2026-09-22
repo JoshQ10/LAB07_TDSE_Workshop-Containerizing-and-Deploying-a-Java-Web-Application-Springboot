@@ -273,3 +273,15 @@ Estimated cost per request = monthly infrastructure cost / monthly requests.
 - [ ] Evidence of successful EC2 deployment
 - [ ] Public deployment URL
 - [ ] Deployment-model diagram and cost analysis
+
+Imagen comando para que docker corra desde terminal: <img width="2200" height="454" alt="image" src="https://github.com/user-attachments/assets/e6707257-a52d-4840-a9e8-2333e0185e92" />
+contenedor corriendo con prueba: <img width="1892" height="199" alt="image" src="https://github.com/user-attachments/assets/0eb77c49-6ff3-4a79-82ca-f8bff32adaf1" />
+prueba contenedor corriendo: <img width="656" height="135" alt="image" src="https://github.com/user-attachments/assets/4668d974-7b75-4d66-bcad-d7940545d5f1" />
+prueba 3 contenedores corriendo simultaneamente: <img width="2546" height="285" alt="image" src="https://github.com/user-attachments/assets/d90263b9-7e79-4e44-a3fc-2502fe2eef6b" />
+prueba compose: <img width="559" height="158" alt="image" src="https://github.com/user-attachments/assets/27b904c2-3737-4d4b-bcc4-d7cefef4b1de" />
+correccion nuevos tags con minusculas: <img width="1611" height="120" alt="image" src="https://github.com/user-attachments/assets/baa81bcb-b4b8-44d3-b495-276286a3ae0a" />
+push lab 1.0: <img width="1757" height="161" alt="image" src="https://github.com/user-attachments/assets/f4a115f3-2bfd-433c-bf7c-9c6528193ce7" />
+
+
+
+
