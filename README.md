@@ -78,9 +78,7 @@ Verify:
 http://localhost:34000/greeting?name=Container
 ```
 
-**Evidence — image built and container running (`docker images`, `docker ps`):**
-
-
+**Evidence — image built and container running (`docker images`, `docker ps`):** see [Evidence — Part 2](#part-2--docker-image-build-run-and-isolation).
 
 ### Container isolation
 
@@ -98,9 +96,7 @@ http://localhost:34001/greeting?name=Container2
 http://localhost:34002/greeting?name=Container3
 ```
 
-**Evidence — three isolated containers responding independently:**
-
-
+**Evidence — three isolated containers responding independently:** see [Evidence — Part 2](#part-2--docker-image-build-run-and-isolation).
 
 ## Part 3 — Docker Compose
 
@@ -116,9 +112,7 @@ Verify:
 http://localhost:8087/greeting?name=Compose
 ```
 
-**Evidence — Compose environment running:**
-
-
+**Evidence — Compose environment running:** see [Evidence — Part 3](#part-3--docker-compose-1).
 
 ## Part 4 — Docker Hub
 
@@ -133,9 +127,7 @@ docker push <dockerhub-user>/virtualization-lab:latest
 
 
 
-**Evidence — Docker Hub repository with both tags:**
-
-
+**Evidence — Docker Hub repository with both tags:** see [Evidence — Part 4](#part-4--docker-hub-1).
 
 ## Part 5 — AWS EC2 deployment
 
@@ -184,9 +176,44 @@ Hello, AWS!
 
 
 
-**Evidence — EC2 deployment (`docker ps`, `docker logs`, browser response):**
+**Evidence — EC2 deployment (`docker ps`, `docker logs`, browser response):** see [Evidence — Part 5](#part-5--aws-ec2-deployment-1).
 
+## Evidence
 
+### Part 2 — Docker image: build, run, and isolation
+
+| # | Description | Screenshot |
+|---|---|---|
+| 1 | `docker run` command executed from the terminal | <img width="2200" height="454" alt="image" src="https://github.com/user-attachments/assets/e6707257-a52d-4840-a9e8-2333e0185e92" /> |
+| 2 | Container running, tested from the terminal | <img width="1892" height="199" alt="image" src="https://github.com/user-attachments/assets/0eb77c49-6ff3-4a79-82ca-f8bff32adaf1" /> |
+| 3 | Container test from the browser | <img width="656" height="135" alt="image" src="https://github.com/user-attachments/assets/4668d974-7b75-4d66-bcad-d7940545d5f1" /> |
+| 4 | Three containers running simultaneously (isolation test) | <img width="2546" height="285" alt="image" src="https://github.com/user-attachments/assets/d90263b9-7e79-4e44-a3fc-2502fe2eef6b" /> |
+
+### Part 3 — Docker Compose
+
+| # | Description | Screenshot |
+|---|---|---|
+| 5 | Compose service running and tested | <img width="559" height="158" alt="image" src="https://github.com/user-attachments/assets/27b904c2-3737-4d4b-bcc4-d7cefef4b1de" /> |
+
+### Part 4 — Docker Hub
+
+| # | Description | Screenshot |
+|---|---|---|
+| 6 | Images retagged with lowercase names (`joshq10/...`) | <img width="1611" height="120" alt="image" src="https://github.com/user-attachments/assets/baa81bcb-b4b8-44d3-b495-276286a3ae0a" /> |
+| 7 | Push of the `1.0` tag | <img width="1757" height="161" alt="image" src="https://github.com/user-attachments/assets/f4a115f3-2bfd-433c-bf7c-9c6528193ce7" /> |
+| 8 | Push of the `latest` tag (same image, layers already exist) | <img width="1402" height="182" alt="image" src="https://github.com/user-attachments/assets/8ba2e5fd-0143-49c3-bef0-92a640f01f2b" /> |
+| 9 | Both pushed tags verified working | <img width="975" height="179" alt="image" src="https://github.com/user-attachments/assets/f0d04197-3c24-448f-ab40-ac85a60c52c6" /> |
+
+### Part 5 — AWS EC2 deployment
+
+| # | Description | Screenshot |
+|---|---|---|
+| 10 | SSH connection to the EC2 instance | <img width="1121" height="378" alt="image" src="https://github.com/user-attachments/assets/a776fcbc-a2e8-4096-a4f3-f8ac1cea1f65" /> |
+| 11 | Docker installation on Amazon Linux 2023 | <img width="1114" height="595" alt="image" src="https://github.com/user-attachments/assets/78d4517a-eaf9-400d-89db-fd8d3c2a043a" /> |
+| 12 | Docker service started and user permissions configured | <img width="712" height="115" alt="image" src="https://github.com/user-attachments/assets/75caa6fc-f541-4070-b983-a8971af15a17" /> |
+| 13 | Image pulled inside the EC2 instance | <img width="1104" height="536" alt="image" src="https://github.com/user-attachments/assets/281f4fc3-8f59-44a3-a470-918cfbb0101e" /> |
+| 14 | Container run and verified (`docker ps`, `docker logs`) | <img width="2542" height="642" alt="image" src="https://github.com/user-attachments/assets/286b94fa-48ad-438e-af17-809902ac3106" /> |
+| 15 | Application responding from EC2 — `Hello, AWS!` | <img width="780" height="225" alt="image" src="https://github.com/user-attachments/assets/16970a2d-04fd-4ed2-979f-ef466ea11ab2" /> |
 
 ## Part 6 — Deployment model and cost analysis
 
@@ -268,35 +295,8 @@ Estimated cost per request = monthly infrastructure cost / monthly requests.
 - [x] Build, execution, containerization, and deployment instructions
 - [ ] Docker Hub repository URL
 - [ ] Evidence of local execution
-- [ ] Evidence of Docker image and running containers
-- [ ] Evidence of Docker Hub image
-- [ ] Evidence of successful EC2 deployment
+- [x] Evidence of Docker image and running containers
+- [x] Evidence of Docker Hub image
+- [x] Evidence of successful EC2 deployment
 - [ ] Public deployment URL
 - [ ] Deployment-model diagram and cost analysis
-
-Imagen comando para que docker corra desde terminal: <img width="2200" height="454" alt="image" src="https://github.com/user-attachments/assets/e6707257-a52d-4840-a9e8-2333e0185e92" />
-contenedor corriendo con prueba: <img width="1892" height="199" alt="image" src="https://github.com/user-attachments/assets/0eb77c49-6ff3-4a79-82ca-f8bff32adaf1" />
-prueba contenedor corriendo: <img width="656" height="135" alt="image" src="https://github.com/user-attachments/assets/4668d974-7b75-4d66-bcad-d7940545d5f1" />
-prueba 3 contenedores corriendo simultaneamente: <img width="2546" height="285" alt="image" src="https://github.com/user-attachments/assets/d90263b9-7e79-4e44-a3fc-2502fe2eef6b" />
-prueba compose: <img width="559" height="158" alt="image" src="https://github.com/user-attachments/assets/27b904c2-3737-4d4b-bcc4-d7cefef4b1de" />
-correccion nuevos tags con minusculas: <img width="1611" height="120" alt="image" src="https://github.com/user-attachments/assets/baa81bcb-b4b8-44d3-b495-276286a3ae0a" />
-push lab 1.0: <img width="1757" height="161" alt="image" src="https://github.com/user-attachments/assets/f4a115f3-2bfd-433c-bf7c-9c6528193ce7" />
-push lastest (misma imagen): <img width="1402" height="182" alt="image" src="https://github.com/user-attachments/assets/8ba2e5fd-0143-49c3-bef0-92a640f01f2b" />
-prueba ambos push de docker funcionando: <img width="975" height="179" alt="image" src="https://github.com/user-attachments/assets/f0d04197-3c24-448f-ab40-ac85a60c52c6" />
-
-
-AWS
-Prueba conexion ssh: <img width="1121" height="378" alt="image" src="https://github.com/user-attachments/assets/a776fcbc-a2e8-4096-a4f3-f8ac1cea1f65" />
-evidencia instalacion docker: <img width="1114" height="595" alt="image" src="https://github.com/user-attachments/assets/78d4517a-eaf9-400d-89db-fd8d3c2a043a" />
-inicializacion de coker y permisos de usuario: <img width="712" height="115" alt="image" src="https://github.com/user-attachments/assets/75caa6fc-f541-4070-b983-a8971af15a17" />
-pull del docker dentro de la instancia: <img width="1104" height="536" alt="image" src="https://github.com/user-attachments/assets/281f4fc3-8f59-44a3-a470-918cfbb0101e" />
-docker run y verificacion: <img width="2542" height="642" alt="image" src="https://github.com/user-attachments/assets/286b94fa-48ad-438e-af17-809902ac3106" />
-evidencia instancia funcionando. Hello AWS!: <img width="780" height="225" alt="image" src="https://github.com/user-attachments/assets/16970a2d-04fd-4ed2-979f-ef466ea11ab2" />
-
-
-
-
-
-
-
-
