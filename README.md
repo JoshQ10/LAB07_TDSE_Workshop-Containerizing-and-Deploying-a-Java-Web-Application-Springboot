@@ -285,5 +285,18 @@ push lastest (misma imagen): <img width="1402" height="182" alt="image" src="htt
 prueba ambos push de docker funcionando: <img width="975" height="179" alt="image" src="https://github.com/user-attachments/assets/f0d04197-3c24-448f-ab40-ac85a60c52c6" />
 
 
+AWS
+Prueba conexion ssh: <img width="1121" height="378" alt="image" src="https://github.com/user-attachments/assets/a776fcbc-a2e8-4096-a4f3-f8ac1cea1f65" />
+evidencia instalacion docker: <img width="1114" height="595" alt="image" src="https://github.com/user-attachments/assets/78d4517a-eaf9-400d-89db-fd8d3c2a043a" />
+inicializacion de coker y permisos de usuario: <img width="712" height="115" alt="image" src="https://github.com/user-attachments/assets/75caa6fc-f541-4070-b983-a8971af15a17" />
+pull del docker dentro de la instancia: <img width="1104" height="536" alt="image" src="https://github.com/user-attachments/assets/281f4fc3-8f59-44a3-a470-918cfbb0101e" />
+docker run y verificacion: <img width="2542" height="642" alt="image" src="https://github.com/user-attachments/assets/286b94fa-48ad-438e-af17-809902ac3106" />
+evidencia instancia funcionando. Hello AWS!: <img width="780" height="225" alt="image" src="https://github.com/user-attachments/assets/16970a2d-04fd-4ed2-979f-ef466ea11ab2" />
+
+
+
+
+
+
 
 
